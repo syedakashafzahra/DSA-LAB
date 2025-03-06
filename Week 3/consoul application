@@ -1,0 +1,152 @@
+/*#include <iostream>
+using namespace std;
+
+int fact(int n) {
+    if (n == 0)
+        return 1;
+    else
+        return n * fact(n - 1);
+}
+
+int main() {
+    cout << "Factorial of 5: " << fact(5) << endl;
+    return 0;
+}
+*/
+/*#include <iostream>
+using namespace std;
+
+void rev() {
+    char ch;
+    cin.get(ch);
+    if (ch != '\n') {
+        rev();
+        cout.put(ch);
+    }
+}
+
+int main() {
+    cout << "Enter a string: ";
+    rev();
+    cout << endl;
+    return 0;
+}
+*/
+/*#include <iostream>
+using namespace std;
+
+int Power(int X, int N) {
+    if (N == 0)
+        return 1;
+    else
+        return Power(X, N - 1) * X;
+}
+
+int main() {
+    cout << "2^5 = " << Power(2, 5) << endl;
+    return 0;
+}
+
+*/
+/*#include <iostream>
+using namespace std;
+
+int Ackermann(int m, int n) {
+    if (m == 0)
+        return n + 1;
+    else if (m > 0 && n == 0)
+        return Ackermann(m - 1, 1);
+    else if (m > 0 && n > 0)
+        return Ackermann(m - 1, Ackermann(m, n - 1));
+}
+
+int main() {
+    cout << "Ackermann(3,4) = " << Ackermann(3, 4) << endl;
+    return 0;
+}
+*/
+/*#include <iostream>
+using namespace std;
+
+int Power(int X, int N) {
+    if (N == 0)
+        return 1;
+    else
+        return Power(X, N - 1) * X;
+}
+
+int main() {
+    cout << "N\t2^N" << endl;
+    for (int i = 0; i <= 20; i++) {
+        cout << i << "\t" << Power(2, i) << endl;
+    }
+    return 0;
+}
+
+*/
+/*
+#include <iostream>
+using namespace std;
+
+void printNumbers(int n) {
+    if (n < 0)
+        return;
+    cout << n << " ";
+    printNumbers(n - 1);
+}
+
+int main() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    printNumbers(n);
+    cout << endl;
+    return 0;
+}
+*/
+/*
+#include <iostream>
+using namespace std;
+
+int binomialCoeff(int n, int k) {
+    if (k == 0 || k == n)
+        return 1;
+    return binomialCoeff(n - 1, k - 1) + binomialCoeff(n - 1, k);
+}
+
+int main() {
+    int n, k;
+    cout << "Enter n and k: ";
+    cin >> n >> k;
+    cout << "C(" << n << ", " << k << ") = " << binomialCoeff(n, k) << endl;
+    return 0;
+}
+
+*/
+/*
+#include <iostream>
+using namespace std;
+
+bool isPrime(int n, int i = 2) {
+    if (n <= 2)
+        return (n == 2);
+    if (n % i == 0)
+        return false;
+    if (i * i > n)
+        return true;
+    return isPrime(n, i + 1);
+}
+
+int main() {
+    int n;
+    cout << "Enter a number : ";
+    cin >> n;
+    if (isPrime(n))
+        cout << n << " is a prime number." << endl;
+    else
+        cout << n << " is not a prime number." << endl;
+    return 0;
+}
+*/
+
+
